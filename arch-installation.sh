@@ -13,19 +13,19 @@ sudo pacman -Syu
 
 # packages
 sudo pacman -Sy
-sudo pacman -S flatpak flameshot python3 python-pip git 
+sudo pacman -S flatpak flameshot python3 python-pip git xrandr xdg-user-dirs
 
 # get my dotfiles
 sudo git clone https://github.com/TKAMING/dotfiles/tree/main
 
 # create my folder structure
+# using xdg-user-dirs
 cd
-mkdir Downloads/
+xdg-user-dirs-update
 mkdir workflow/
 cd workflow
 mkdir dotfiles
 cd ..
-mkdir Documents/
 cd Documents
 mkdir comp/
 cd comp
