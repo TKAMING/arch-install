@@ -36,7 +36,10 @@ cd
 
 # move to .config
 mkdir .config
-cp -a dotfiles/. .config/
+cp -a dotfiles/i3 .config/
+cp -a dotfiles/nvim .config/
+cp -a dotfiles/polybar .config/
+cp -a dotfiles/rofi .config/
 
 # backup my dotfiles
 sudo chmod +x backup-dotfiles.sh
